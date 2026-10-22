@@ -1,0 +1,108 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+/* Custom Leaflet Dark & Clean Theme Overrides */
+.leaflet-container {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  background-color: #171717;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #1c1917 !important;
+  color: #f5f5f4 !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5) !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-popup-tip {
+  background: #1c1917 !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+  color: #a8a29e !important;
+  padding: 8px !important;
+  top: 6px !important;
+  right: 6px !important;
+}
+
+.leaflet-container a.leaflet-popup-close-button:hover {
+  color: #ffffff !important;
+}
+
+/* Custom IOF Flag Marker */
+.iof-flag-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease-out;
+  cursor: pointer;
+}
+
+.iof-flag-marker:hover {
+  transform: scale(1.18);
+  z-index: 1000 !important;
+}
+
+.iof-flag-box {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  overflow: hidden;
+  border: 2px solid #ffffff;
+  background: linear-gradient(135deg, #ffffff 50%, #ea580c 50%);
+}
+
+.iof-flag-label {
+  position: absolute;
+  bottom: -6px;
+  right: -6px;
+  background: #1c1917;
+  color: #fb923c;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 10px;
+  padding: 1px 4px;
+  border-radius: 4px;
+  border: 1px solid #78350f;
+  line-height: 1;
+}
+
+/* IOF Control Circle Marker */
+.iof-circle-marker {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 3.5px solid #d946ef;
+  background: rgba(217, 70, 239, 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  transition: transform 0.15s ease-out;
+  cursor: pointer;
+}
+
+.iof-circle-marker:hover {
+  transform: scale(1.2);
+  border-color: #f43f5e;
+  z-index: 1000 !important;
+}
+

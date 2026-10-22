@@ -1,0 +1,6 @@
+{
+  "name": "Orienteering Race Map & Logbook",
+  "description": "Interactive map and logbook for orienteering competitions with GPS tracking links, Livelox routes, and race results.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
